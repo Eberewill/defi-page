@@ -1,0 +1,112 @@
+.section-hero {
+  position: relative;
+  .btn {
+    margin-top: 16px;
+  }
+
+  .arrow-down {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    padding-right: 2px;
+    transform: translateX(-50%);
+  }
+
+  .arrow-down-contribute {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    padding-right: 2px;
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width: 991px) {
+  .section-hero {
+    .btn-wrapper {
+      justify-content: center;
+    }
+
+    .arrow-down {
+      display: none;
+    }
+
+    .arrow-down-contribute {
+      display: none;
+    }
+  }
+
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 430px;
+  }
+}
+
+@media(max-width: 767px) {
+  .section-hero {
+    .btn-wrapper {
+      margin-bottom: 40px;
+    }
+  }
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    min-height: 317px;
+  }
+}
+
+@media(max-width: 576px) {
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    min-height: 310px;
+  }
+}
+
+@media(max-width: 550px) {
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    min-height: 290px;
+  }
+}
+@media(max-width: 490px) {
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    min-height: 260px;
+  }
+}
+
+@media(max-width: 430px) {
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    min-height: 230px;
+  }
+}
+
+@media(max-width: 370px) {
+  .hero-animation-wrapper,
+  .about-hero-img-illust,
+  .contribute-hero-animation-wrapper,
+  .lindao-hero-animation-wrapper,
+  .relay-hero-animation-wrapper {
+    min-height: 200px;
+  }
+}

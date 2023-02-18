@@ -1,0 +1,170 @@
+.section-decentralized-economy {
+  overflow: hidden;
+}
+.col-economy {
+  position: relative;
+  display: flex;
+  margin-top: 40px;
+  padding-right: 35px;
+
+  .col-visible {
+    height: 100%;
+
+    .icon {
+      height: 163px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .col-par {
+      padding-right: 20px;
+    }
+  }
+
+  .col-hidden {
+    position: absolute;
+    background: $white;
+    height: 100%;
+    right: 35px;
+    border-radius: 4px;
+    box-shadow: 0 18px 60px 0 rgba(47, 48, 65, 0.05);
+    padding: 32px;
+  }
+
+  @media(min-width: 991px) {
+    .col-hidden {
+      transform: translateY(10%);
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+
+    }
+    &:hover {
+      .col-hidden {
+        opacity: 1;
+        transform: translateY(15px);
+      }
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .col-economy {
+    padding-right: 15px;
+    justify-content: center;
+    .col-visible {
+      z-index: 1;
+
+      .icon {
+        z-index: 0;
+        position: relative;
+        height: auto;
+        margin-bottom: 24px;
+        justify-content: center;
+
+        img {
+          z-index: 0;
+        }
+      }
+
+      .col-heading {
+        line-height: 1.33;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+
+      .col-par {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+        padding-right: 0;
+      }
+
+      a {
+        justify-content: center;
+      }
+    }
+    .col-hidden {
+      display: none;
+      opacity: 1;
+      z-index: 3;
+      right: 15px;
+      left: 15px;
+      height: auto;
+      top: 50%;
+      opacity: 1;
+      transform: translateY(-50%);
+
+      .close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: $battleship_grey;
+        }
+      }
+
+      .col-heading,
+      .p-hidden-grey,
+      .par-hidden,
+      a {
+        transition: all 0.1s linear;
+      }
+    }
+  }
+
+  .section-decentralized-economy {
+    .heading {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    p.par {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .col-economy {
+    .col-hidden {
+      padding: 16px;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .section-decentralized-economy {
+    p.par {
+      text-align: center;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .col-economy {
+    margin-top: 48px;
+
+    .col-hidden {
+      display: none;
+      opacity: 1;
+      transition: none;
+    }
+
+    .col-visible {
+      .icon {
+        max-width: 135px;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

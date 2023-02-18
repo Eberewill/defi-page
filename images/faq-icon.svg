@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="138" viewBox="0 0 142 138">
+    <defs>
+        <path id="a" d="M51.743 0C23.165 0 0 19.885 0 44.413A39.437 39.437 0 0 0 6.522 66.02v29.902l15.274-15.274a57.483 57.483 0 0 0 29.934 8.185c28.579 0 51.744-19.885 51.744-44.413C103.474 19.89 80.315 0 51.744 0z"/>
+        <filter id="b" width="122.2%" height="124%" x="-11.1%" y="-12%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="7"/>
+            <feOffset dy="9" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.0233495524 0 0 0 0 0.0389249858 0 0 0 0 0.280344203 0 0 0 0.505791084 0"/>
+        </filter>
+        <path id="d" d="M89.628 41.27c23.276 0 42.144 16.193 42.144 36.176a32.12 32.12 0 0 1-5.315 17.608v24.353l-12.45-12.45a46.82 46.82 0 0 1-24.385 6.665c-23.276 0-42.144-16.194-42.144-36.176 0-19.983 18.874-36.176 42.15-36.176z"/>
+        <filter id="c" width="147.5%" height="151.2%" x="-23.7%" y="-12.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.184313725 0 0 0 0 0.188235294 0 0 0 0 0.254901961 0 0 0 0.161494755 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <use fill="#3740C7" xlink:href="#a"/>
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        </g>
+        <g>
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#2DB7E3" xlink:href="#d"/>
+        </g>
+        <path fill="#FFF" d="M47.485 77.446c.001 3.88.72 7.728 2.12 11.347.708.027 1.421.04 2.138.04 28.579 0 51.744-19.885 51.744-44.413v-1.148a48.391 48.391 0 0 0-13.84-1.996c-23.295-.006-42.162 16.194-42.162 36.17z"/>
+    </g>
+</svg>

@@ -1,0 +1,133 @@
+.section-faq-help {
+  padding-top: 32px;
+  padding-bottom: 80px;
+  .widget {
+    border-radius: 4px;
+    box-shadow: 0 0 44px 0 rgba(0, 0, 0, 0.05);
+    background-color: $white;
+    padding: 40px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: all 0.2s linear;
+
+    .widget-icon {
+      transition: all 0.2s linear;
+      img {
+        width: auto;
+      }
+    }
+
+    .widget-content {
+      max-width: 280px;
+      width: 100%;
+      transition: all 0.2s linear;
+      .widget-title {
+        margin-bottom: 8px;
+        color: #353a42;
+      }
+
+      p.par {
+        line-height: 1.94;
+        font-size: 16px;
+        color: $battleship_grey;
+        margin-bottom: 22px;
+      }
+    }
+
+    @media(min-width: 991px) {
+      &:hover {
+        transform: translateY(-8px);
+
+        .widget-icon,
+        .help-link {
+          opacity: 0.85;
+        }
+        .widget-content {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .section-faq-help {
+    .widget {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .help-link {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 991px) {
+  .section-faq-help {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 64px;
+
+    &::before {
+      content: "";
+      background-color: #fafaff;
+      position: absolute;
+      width: 100%;
+      height: 80%;
+    }
+    .widget {
+      padding: 32px;
+      justify-content: flex-end;
+
+      .widget-icon {
+        height: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .widget-title {
+        margin-top: 16px;
+        max-width: 220px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .section-faq-help {
+    padding-top: 8px;
+    margin-bottom: 0;
+    &::before {
+      display: none;
+    }
+
+    .widget {
+      height: auto;
+      margin-top: 24px;
+      .widget-title {
+        max-width: 100%;
+      }
+
+      .widget-icon {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 16px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .widget-content {
+        p.par {
+          line-height: 1.63;
+        }
+      }
+    }
+  }
+}

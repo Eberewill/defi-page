@@ -1,0 +1,205 @@
+.modal {
+  transition: all 0.2s linear;
+  opacity: 0;
+
+  &.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.2s linear;
+  }
+
+  .close {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 99;
+
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 624px;
+    transform: translate(0) !important;
+  }
+
+  .modal-content {
+    background-color: #3840c7;
+
+    .modal-body {
+      padding: 64px 80px;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("../images/integrate-left.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 60px;
+      }
+
+      &::after {
+        content: "";
+        background-image: url("../images/integrate-right.svg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 60px;
+      }
+    }
+
+    h3,
+    p {
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 40px;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.72;
+      text-align: center;
+    }
+  }
+
+  #form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+
+    .message,
+    #emailField-error {
+      position: absolute;
+      bottom: 30px;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+      padding: 4px;
+      width: calc(100% - 178px);
+      text-align: center;
+
+      &.success {
+        background: green;
+      }
+
+      &.error {
+        background: red;
+      }
+    }
+
+    #emailField-error {
+      background: red;
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    border-radius: 4px;
+    border: solid 1px #dedeed;
+    color: #fff;
+    height: 47px;
+    margin-right: 16px;
+    max-width: 270px;
+    width: 100%;
+    padding-left: 16px;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #fff;
+      opacity: 1; /* Firefox */
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #fff;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #fff;
+    }
+  }
+
+  #submit {
+    border: 0;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .modal {
+    input {
+      height: 40px;
+    }
+
+    .modal-content {
+      h3 {
+        font-size: 24px;
+        max-width: 400px;
+      }
+
+      p {
+        font-size: 14px;
+        max-width: 400px;
+      }
+
+      .modal-body {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &::before,
+        &::after {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .modal {
+    #form {
+      flex-direction: column;
+
+      #emailField-error.error {
+        width: calc(100% - 80px);
+        font-size: 12px;
+      }
+
+      .message.success {
+        width: calc(100% - 80px);
+      }
+    }
+
+    input {
+      width: 100%;
+      display: block;
+      margin-right: 0;
+      max-width: 100%;
+      margin-bottom: 8px;
+    }
+
+    #submit {
+      width: 100%;
+      display: flex;
+    }
+  }
+}

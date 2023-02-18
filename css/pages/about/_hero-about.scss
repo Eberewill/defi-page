@@ -1,0 +1,65 @@
+.section-hero-about {
+  .about-hero-img {
+    padding-right: 15px;
+  }
+
+  .blue-title {
+    margin-bottom: 16px;
+  }
+
+  .heading {
+    font-size: 43px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .section-hero-about {
+    .about-hero-img {
+      max-width: 50%;
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .section-hero-about,
+  .section-hero {
+    .blue-title {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    p.par {
+      text-align: center;
+    }
+
+    .about-hero-img {
+      max-width: 100%;
+      margin-top: 24px;
+      text-align: center;
+
+      img {
+        max-width: 566px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .section-hero-about {
+    .heading {
+      font-size: 24px;
+    }
+
+    .about-hero-img {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+}

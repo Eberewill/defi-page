@@ -1,0 +1,32 @@
+.section-omni {
+  padding-left: 15px;
+  padding-right: 15px;
+  .blue-title {
+    color: #363fc6;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+
+  p.par {
+    max-width: 570px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.94;
+    margin-bottom: 32px;
+  }
+
+  .btn {
+    svg {
+      margin-left: 16px;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .section-omni {
+    .heading {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+[{
+	"imgDesktop": "https://www.marlin.pro/wp-content/uploads/2019/07/investors-website.png", 
+	"imgTablet": "https://www.marlin.pro/wp-content/uploads/2019/07/investors-tablet.png", 
+	"imgMobile": "https://www.marlin.pro/wp-content/uploads/2020/01/80x80-investors.png", 
+	"type": "Blog",
+	"title": "Marlin raises $3 million to improve peer-to-peer networking", 
+	"detail": "Marlin is privileged and grateful to have Binance Labs, Arrington XRP Capital, Electric Capital...",
+	"link": "https://blog.marlin.org/marlin-raises-3-million-to-improve-peer-to-peer-networking"
+}, {
+	"imgDesktop": "https://www.marlin.pro/wp-content/uploads/2020/02/Byzantine-ODSBR-Website.jpg", 
+	"imgTablet": "https://www.marlin.pro/wp-content/uploads/2020/02/Byzantine-ODSBR-Tablet.jpg", 
+	"imgMobile": "https://www.marlin.pro/wp-content/uploads/2020/02/80x80-Byzantine-ODSBR.jpg", 
+	"type": "Blog", 
+	"title": "Byzantine resistant networking protocols feat. ODSBR", 
+	"detail": "As a project dedicated to securely optimizing data transmission at the network layer, exploring...",
+	"link": "https://blog.marlin.org/byzantine-resistant-networking-protocols-feat-odsbr"
+}, {
+	"imgDesktop": "https://www.marlin.pro/wp-content/uploads/2020/02/uninitiated-website.jpg", 
+	"imgTablet": "https://www.marlin.pro/wp-content/uploads/2020/02/uninitiated-tablet.jpg", 
+	"imgMobile": "https://www.marlin.pro/wp-content/uploads/2020/02/uninitiated-mobile.jpg",  
+	"type": "Blog",
+	"title": "Marlin for the uninitiated (with illustrations)", 
+	"detail": "Marlin delivers scalability, resiliency and decentralization at layer 0 by optimizing the networking...",
+	"link": "https://blog.marlin.org/marlin-for-the-uninitiated/"
+}]

@@ -1,0 +1,371 @@
+@font-face {
+  font-family: 'InterReg';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Inter-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Inter-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'InterMed';
+  src: url('/fonts/Inter-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Inter-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Inter-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: url('/fonts/Inter-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Inter-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Inter-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1,
+h2,
+h3,
+.integrate-title,
+.widget-title,
+.section-hero-about .blue-title,
+.modal h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.footer-menu-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+#header-top-text,
+.par,
+.col-par,
+.sdk-illustration.first-active .inner-green-two,
+.sdk-illustration.first-active .inner-blue-two,
+.sdk-illustration.first-active .inner-white-two,
+.sdk-illustration .inner-text,
+.footer-menu-list-element a,
+.contributor-position,
+.designed-text,
+.copyrights-text,
+.has-submenu .submenu li a,
+input {
+  font-family: 'InterReg';
+}
+
+.header a,
+.col-heading,
+.col-visible a,
+.col-hidden a,
+.sdk-list-element,
+.sdk-list-element-tablet,
+.sdk-illustration .inner-green,
+.sdk-illustration .inner-blue,
+.sdk-illustration .inner-white,
+.btn,
+.foundry-list-element .heading,
+.news-row .title,
+.help-link,
+.contributor-name,
+.supporter-box--name {
+  font-family: 'InterMed';
+}
+
+.blue-title,
+.cat {
+  font-family: 'InterBold';
+}
+
+.col-heading {
+  font-size: 22px;
+  line-height: 1.82;
+  color: $dark;
+  margin-bottom: 8px;
+}
+
+.integrate-title {
+  font-size: 48px;
+  color: #fff;
+}
+
+.col-hidden {
+  .col-heading {
+    line-height: 1.82;
+    font-size: 22px;
+    color: $blue_blue;
+    margin-bottom: 16px;
+  }
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.27;
+  color: $dark_indigo;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 44px;
+  line-height: 1.27;
+  color: $dark;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.43;
+  color: $dark;
+  margin-bottom: 24px;
+}
+
+.blue-title {
+  font-size: 16px;
+}
+
+.section-hero-about .blue-title {
+  font-size: 28px;
+  line-height: 1.43;
+  color: $blue_blue;
+}
+
+.foundry-list-element .heading {
+  font-size: 22px;
+  color: #353a42;
+}
+
+.widget-title {
+  font-size: 20px;
+  line-height: 2;
+}
+
+.contributor-name {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $dark;
+}
+
+.contributor-position {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $slate;
+}
+
+.footer-menu-title {
+  font-size: 18px;
+  color: #2f3041;
+  line-height: 1.78;
+}
+
+.supporter-box--name {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $dark;
+}
+
+.foundry-list-element p.par {
+  font-size: 16px;
+  line-height: 1.94;
+}
+
+p {
+  &.par {
+    font-size: 18px;
+    line-height: 1.72;
+    color: $slate;
+    margin-bottom: 16px;
+  }
+
+  &.col-par {
+    font-size: 14px;
+    line-height: 2;
+    color: $slate;
+    margin-bottom: 16px;
+  }
+
+  &.par-hidden-grey {
+    font-size: 14px;
+    line-height: 2;
+    color: $battleship_grey;
+    margin-bottom: 8px;
+  }
+  &.par-hidden {
+    font-size: 14px;
+    line-height: 2;
+    color: $dark_two;
+    margin-bottom: 16px;
+  }
+
+  &.par-content {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+.col-visible,
+.col-hidden {
+  a {
+    text-decoration: none;
+    color: $blue_blue;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-top: 1px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.help-link {
+  font-size: 14px;
+  color: $blue_blue;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-left: 14px;
+    margin-top: 1px;
+  }
+}
+
+.sdk-list-element,
+.sdk-list-element-tablet {
+  font-size: 20px;
+}
+
+.copyrights-text {
+  font-size: 14px;
+  color: $battleship_grey;
+}
+
+.designed-text {
+  font-size: 14px;
+  color: $battleship_grey;
+
+  &:hover {
+    color: $battleship_grey !important;
+  }
+}
+
+.designed-text {
+  text-decoration: none !important;
+  color: $battleship_grey;
+  font-size: 14px;
+}
+
+@media(max-width: 991px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1.4;
+    color: $dark_indigo;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 1.43;
+  }
+
+  p {
+    &.par {
+      font-size: 18px;
+      line-height: 1.33;
+      color: $slate;
+      margin-bottom: 16px;
+    }
+    &.par-content {
+      font-size: 16px;
+      line-height: 2;
+      margin-bottom: 48px;
+    }
+  }
+
+  .section-hero-about {
+    .blue-title {
+      font-size: 24px;
+    }
+  }
+
+  .widget-title {
+    line-height: 1.6;
+  }
+}
+
+@media(max-width: 767px) {
+  h1 {
+    font-size: 24px !important;
+    line-height: 1.33;
+    color: $dark_indigo;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 16px;
+  }
+
+  p {
+    &.par {
+      font-size: 16px;
+      line-height: 1.63;
+    }
+    &.par-content {
+      font-size: 16px;
+      line-height: 1.63;
+      margin-bottom: 24px;
+    }
+  }
+
+  .foundry-list-element {
+    .heading {
+      font-size: 18px;
+    }
+  }
+
+  .foundry-list-element {
+    p.par {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
+  .section-hero-about {
+    .blue-title {
+      font-size: 16px;
+    }
+  }
+
+  .widget-title {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  .col-heading {
+    font-size: 18px;
+  }
+
+  .contributor-name {
+    font-size: 14px;
+  }
+
+  .contributor-position {
+    font-size: 12px;
+  }
+
+  .integrate-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .copyrights-text,
+  .designed-text {
+    font-size: 12px;
+  }
+
+  .sdk-list-element,
+  .sdk-list-element-tablet {
+    font-size: 14px;
+  }
+}

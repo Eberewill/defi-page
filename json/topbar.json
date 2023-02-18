@@ -1,0 +1,18 @@
+[
+	{
+		"text": "The eggnet has crossed over 800 nodes!",
+		"link": "https://dashboard.marlin.pro/"
+	}, 
+	{
+		"text": "marlinctl makes it easy for anyone to run a node",
+		"link": "https://blog.marlin.org/introducing-marlinctl-to-simplify-node-management/"
+	}, 
+	{
+		"text": "Introducing Marlin Cache to accelerate APIs",
+		"link": "https://blog.marlin.org/introducing-marlin-as-a-cache-to-accelerate-and-cheapen-the-graph-and-personalize-nft-marketplaces/"
+	}, 
+	{
+		"text": "Read our latest analysis on the security of layer-0 scaling approaches",
+		"link": "https://blog.marlin.org/are-centralized-relay-networks-a-suitable-l0-scaling-solution/"
+	}
+]

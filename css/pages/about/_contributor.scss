@@ -1,0 +1,63 @@
+.section-contributors {
+  .heading {
+    margin-bottom: 0;
+  }
+  .contributor-box {
+    margin-top: 56px;
+
+    img {
+      border-radius: 4px;
+    }
+
+    .contributor-content {
+      margin-top: 24px;
+
+      .linkedin {
+        svg {
+          path {
+            transition: fill 0.2s linear;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              fill: #3740c7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .section-contributors {
+    .heading {
+      margin-bottom: 8px;
+    }
+    .contributor-box {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .section-contributors {
+    .contributor-box {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .contributor-bigscreen {
+    display: none;
+  }
+}
+
+@media(min-width: 992px) {
+  .contributor-smallscreen {
+    display: none;
+  }
+}
